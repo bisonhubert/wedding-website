@@ -915,3 +915,9 @@ body.modal-open {
 .modal-body {
   padding: 25px;
 }
+.m--center-x {
+  margin: 0 auto;
+}
+.float--none {
+  float: none;
+}
