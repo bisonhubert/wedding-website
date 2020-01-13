@@ -67,6 +67,7 @@
                   <li><a href="#intro">How we met</a></li>
                   <li><a href="#instagram">Instagram</a></li>
                   <li><a href="#eng-pics">Engagement</a></li>
+                  <li><a href="#weather">Weather</a></li>
                 </ul>
                 <ul class="member-actions">
                   <li><a href="#map" class="login">Venue</a></li>
@@ -266,6 +267,17 @@
             </div>
         </div>
     </div>-->
+    </section>
+
+    <section id="weather" class="section-padding">
+      <a
+        class="weatherwidget-io"
+        href="https://forecast7.com/en/38d05n122d16/benicia/?unit=us"
+        data-label_1="BENICIA"
+        data-label_2="WEATHER"
+        data-theme="original"
+        >BENICIA WEATHER</a
+      >
     </section>
 
     <section id="map" class="section-padding">
@@ -473,6 +485,18 @@
       );
       ga("create", "UA-46465113-4", "auto");
       ga("send", "pageview");
+    </script>
+    <script>
+      !(function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
     </script>
   </body>
 </html>
